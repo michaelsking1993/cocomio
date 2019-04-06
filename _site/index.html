@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
+    
+        <title>Test Page: Don't Panic</title>
+    
+    
+        <meta name="description" content="This is CocoMío. Learn your way.">
+    
     <title>Test Page: Don't Panic</title>
+    <link href="/favicon.png" rel="icon">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100"
+          rel="stylesheet">
+    <link rel="stylesheet" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
     <header class="header">
     <nav>
+        <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+        <label for="mobile-menu" class="show-mobile-menu">Menu</label>
         <ul class="header-nav nav-links">
             <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+        <li>Recent Posts</li>
+        
+        <li><a href="/2018/11/03/third-post.html">This is the title of the post</a></li>
+        
+        <li><a href="/2016/11/04/title-of-second-post.html">This is THEEEE title of the post</a></li>
+        
+        <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+        
+    </ul>
+</li>
 <li><a href="/2018/11/03/third-post.html">Newest Post</a></li>
         </ul>
     </nav>
@@ -27,13 +52,19 @@
             <h1>CODE DANGEROUSLY</h1>
             <ul class="social-list">
                 <li>
-                    <a href="http://example.com/" class="social-link">Fb</a>
+                    <a href="http://example.com/" class="social-link">
+                        <i class="fas fa-facebook"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="http://example.com/" class="social-link">Tw</a>
+                    <a href="http://example.com/" class="social-link">
+                        <i class="fas fa-twitter"></i>
+                    </a>
                 </li>
                 <li>
-                    <a href="http://example.com/" class="social-link">Gh</a>
+                    <a href="http://example.com/" class="social-link">
+                        <i class="fa fa-github"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -83,7 +114,7 @@
         </h2>
         <div class="post-byline">
             <img src="https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150">
-            <a href="http://twitter.com/mhartl" class="social-link">Tw</a>
+            <a href="http://twitter.com/mhartl" class="social-link"><i class="fa fa-twitter"></i></a>
             by: Me, Myself, and I
             <span> - November 03, 2018</span>
         </div>
@@ -114,7 +145,7 @@ the spleen and regulating the circulation.</p>
                 <img src="http://placekitten.com/g/400/400">
                 <h3>Michael Hartl</h3>
                 <a href="http://twitter.com/mhartl" class="social-link">
-                    Tw
+                    <i class="fa fa-twitter"></i>
                 </a>
                 <div class="bio-copy">
                     <p>
@@ -138,7 +169,7 @@ the spleen and regulating the circulation.</p>
                 <img src="http://placekitten.com/g/400/400">
                 <h3>Lee Donahoe</h3>
                 <a href="https://twitter.com/leedonahoe" class="social-link">
-                    Tw
+                    <i class="fa fa-twitter"></i>
                 </a>
                 <div class="bio-copy">
                     <p>
@@ -153,7 +184,7 @@ the spleen and regulating the circulation.</p>
                 <img src="http://placekitten.com/g/400/400">
                 <h3>Nick Merwin</h3>
                 <a href="https://twitter.com/nickmerwin" class="social-link">
-                    Tw
+                    <i class="fa fa-twitter"></i>
                 </a>
                 <div class="bio-copy">
                     <p>
@@ -176,16 +207,28 @@ the spleen and regulating the circulation.</p>
     <ul class="footer-nav nav-links">
         <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="/blog">Blog</a></li>
+<li class="dropdown">
+    <a class="drop-trigger" href="/blog">Blog</a>
+    <ul class="drop-menu">
+        <li>Recent Posts</li>
+        
+        <li><a href="/2018/11/03/third-post.html">This is the title of the post</a></li>
+        
+        <li><a href="/2016/11/04/title-of-second-post.html">This is THEEEE title of the post</a></li>
+        
+        <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+        
+    </ul>
+</li>
 <li><a href="/2018/11/03/third-post.html">Newest Post</a></li>
         <li>
-    <a href="http://example.com/" class="social-link">Fb</a>
+    <a href="http://example.com/" class="social-link"><i class="fa fa-facebook"></i></a>
 </li>
 <li>
-    <a href="http://example.com/" class="social-link">Tw</a>
+    <a href="http://example.com/" class="social-link"><i class="fa fa-twitter"></i></a>
 </li>
 <li>
-    <a href="http://example.com/" class="social-link">Gh</a>
+    <a href="http://example.com/" class="social-link"><i class="fa fa-github"></i></a>
 </li>
     </ul>
     <h3>Learn Enough <span>to Be Dangerous</span></h3>
